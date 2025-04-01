@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "cache-application"
+  datasource:
+    url: jdbc:mysql://localhost:3306/cache
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-initial-schema-and-data.yaml
