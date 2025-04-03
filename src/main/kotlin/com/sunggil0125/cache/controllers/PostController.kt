@@ -37,4 +37,6 @@ data class PostResponse(
     val id: Long,
     val title: String?,
     val content: String?,
-)
+) {
+    constructor(): this(0, null, null)
+}
